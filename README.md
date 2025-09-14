@@ -1,5 +1,3 @@
-# homelab-scripts
-Automation scripts and documentation for my Home Lab
 # HomeLab Scripts
 
 Collection of automation and monitoring scripts for my Home Lab environment
