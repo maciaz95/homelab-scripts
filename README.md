@@ -14,7 +14,7 @@ Basic script that diplays info about:
 - System load
 
 **Usage:**
-'''bash
+```bash
 cd scripts/monitoring
 ./system_health.sh
 
