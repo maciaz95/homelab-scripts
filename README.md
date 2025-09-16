@@ -16,6 +16,8 @@ Collection of automation and monitoring scripts for my Home Lab environment
   - Network: DHCP from home router
   - Services: Nginx, SSH from Windows host via dynamic IP
 
+  (future services to be included here...)
+
 **Remote Access:**
 - SSH key-based authentication
 - Accessible from Windows Terminal/PowerShell
