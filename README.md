@@ -25,16 +25,16 @@ Collection of automation and monitoring scripts for my Home Lab environment
 
 
 
-## Monitoring Scripts
+## Monitoring scripts
 
 ### system_health.sh
 Basic script that diplays info about:
-- System uptime
-- Disk usage
-- Memory usage
-- Top processes by CPU
-- Network connections
-- System load
+- System uptime (uptime)
+- Disk usage (df -h)
+- Memory usage (free -h)
+- Top processes by CPU (ps aux --sort=-%cpu | (optionally head -6))
+- Network connections (ss -tuln | (optionally) head -10))
+- System load (cat /proc/loadavg)
 
 **Usage:**
 ```bash
@@ -42,17 +42,38 @@ cd scripts/monitoring
 ./system_health.sh
 ```
 
-## Automation Scripts
+## Automation scripts
 
 ### disk_space_alert.sh
 Monitors disk space usage and alerts when threshold is exceeded.
 - Default threshold: 80%
 - Checks root partition (/)
 - Shows current usage and available space
+- If disk usage is greater then threshold it alerts the current user
+
 
 **Usage:**
 ```bash
 cd scripts/automation
 ./disk_space_alert.sh
 ```
+
+## Security scripts
+
+### failedSSH_loginAttempts.sh (still debugging)
+Checks for failed login attempts via SSH
+- Checks current date (works)
+- Analyzes /var/log/auth.log file and passes the output to temporary report file
+- Checks for today's failed SSH attempts (still debugging)
+- Alerts if login attempts exceeded 3 (still debugging)
+- Displays raport (kinda works)
+
+
+
+**Usage:**
+```bash
+cd scripts/security
+./failedSSH_loginAttempts.sh
+```
+
 
