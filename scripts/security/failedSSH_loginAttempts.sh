@@ -6,7 +6,7 @@
 
 LOG_FILE="/var/log/auth.log"
 REPORT_FILE="/tmp/failed_logins_report.txt"
-THRESHOLD=5
+THRESHOLD=3
 
 echo "*** FAILED LOGIN MONITOR ***" > $REPORT_FILE
 echo "" >> $REPORT_FILE
