@@ -3,6 +3,7 @@
 # Failed Login Monitor Script
 # Author: m4ci4z
 # Monitors SSH authentication failures and reports suspicious activity
+# Date: $(date +%Y-%m-%d)
 
 LOG_FILE="/var/log/auth.log"
 REPORT_FILE="/tmp/failed_logins_report.txt"

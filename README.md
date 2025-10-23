@@ -48,8 +48,8 @@ cd scripts/monitoring
 Monitors disk space usage and alerts when threshold is exceeded.
 - Default threshold: 80%
 - Checks root partition (/)
-- Shows current usage and available space
-- If disk usage is greater then threshold it alerts the current user
+- Shows current usage and available space (df -h, awk, sed)
+- If disk usage is greater then threshold it alerts the current user (simple if statement)
 
 
 **Usage:**

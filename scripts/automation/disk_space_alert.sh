@@ -1,8 +1,11 @@
-#!/bin/bash
+#!bin/bash
 
 # Disk Space Alert Script
+# Author: m4ci4z
 # Alerts when disk usage exceeds threshold
+# Date: $(date +%Y-%m-%d)
 
+TODAY=$(date +%b)
 THRESHOLD=80
 PARTITION="/"
 
@@ -11,7 +14,7 @@ USAGE=$(df -h $PARTITION | awk 'NR==2{print $5}' | sed 's/%//')
 
 echo "*** DISK SPACE MONITOR ***"
 echo ""
-echo "* * * Date: $(date)"
+echo "* * * Date: ${TODAY}"
 echo "* * * Checking partition: $PARTITION"
 echo "* * * Current usage: ${USAGE}%"
 echo "* * * Alert threshold: ${THRESHOLD}%"
@@ -23,3 +26,4 @@ if  [ $USAGE -gt $THRESHOLD ]; then
 else
 	echo "*** OK: Disk usage is within acceptable limits"
 fi
+

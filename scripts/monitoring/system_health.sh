@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # System Health Check Script
-# Author: HomeLab Admin
+# Author: m4ci4z
 # Date: $(date +%Y-%m-%d)
 
 
