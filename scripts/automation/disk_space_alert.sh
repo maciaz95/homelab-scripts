@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # Disk Space Alert Script
 # Author: m4ci4z
@@ -21,9 +21,11 @@ echo "* * * Alert threshold: ${THRESHOLD}%"
 echo ""
 
 if  [ $USAGE -gt $THRESHOLD ]; then
+	echo ""
 	echo "!!! ALERT: Disk usage is ${USAGE}% - exceeds threshold!"
 	echo "Free space: $(df -h $PARTITION | awk 'NR==2{print $4}')"
 else
-	echo "*** OK: Disk usage is within acceptable limits"
+	echo "*** Disk usage is within acceptable limits ***"
+	echo ""
 fi
 

@@ -18,7 +18,7 @@ echo "" >> $REPORT_FILE
 
 # Get today's failed SSH attempts
 echo "*** TODAY'S FAILED SSH ATTEMPTS ***" >> $REPORT_FILE
-TODAY=$(date +%b\ %d)
+TODAY=$(date +%Y-%m-%d)
 grep -a "$TODAY" $LOG_FILE | grep -a "Failed password" | wc -l >> $REPORT_FILE
 echo "" >> $REPORT_FILE
 
