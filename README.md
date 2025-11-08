@@ -64,9 +64,9 @@ cd scripts/automation
 Checks for failed login attempts via SSH
 - Checks current date (works)
 - Analyzes /var/log/auth.log file and passes the output to temporary report file
-- Checks for today's failed SSH attempts (still debugging)
-- Alerts if login attempts exceeded 3 (still debugging)
-- Displays raport (kinda works)
+- Checks for today's failed SSH attempts (works)
+- Alerts if login attempts exceeded 3 (works)
+- Displays raport (works)
 
 
 
