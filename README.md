@@ -60,7 +60,7 @@ cd scripts/automation
 
 ## Security scripts
 
-### failedSSH_loginAttempts.sh (still debugging)
+### failedSSH_loginAttempts.sh
 Checks for failed login attempts via SSH
 - Checks current date (works)
 - Analyzes /var/log/auth.log file and passes the output to temporary report file
