@@ -13,12 +13,12 @@ PARTITION="/"
 USAGE=$(df -h $PARTITION | awk 'NR==2{print $5}' | sed 's/%//')
 
 echo "*** DISK SPACE MONITOR ***"
-echo ""
+echo " "
 echo "* * * Date: ${TODAY}"
 echo "* * * Checking partition: $PARTITION"
 echo "* * * Current usage: ${USAGE}%"
 echo "* * * Alert threshold: ${THRESHOLD}%"
-echo ""
+echo " "
 
 if  [ $USAGE -gt $THRESHOLD ]; then
 	echo "!!! ALERT: Disk usage is ${USAGE}% - exceeds threshold!"
