@@ -8,7 +8,7 @@
 echo "***** SYSTEM HEALTH CHECK *****"
 echo "Date: $(date)"
 echo "Hostname: $(hostname)"
-echo ""
+echo " "
 
 echo "*** UPTIME ***"
 uptime
