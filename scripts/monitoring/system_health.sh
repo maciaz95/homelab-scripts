@@ -1,9 +1,10 @@
 #!/bin/bash
 
 # System Health Check Script
-# Author: m4ci4z
-# Date: $(date +%Y-%m-%d)
+# Author: admin
 
+# This script checks for current uptime of the server, disk usage, memory usage,
+# top 5 processes sorted by CPU, network connections and system load
 
 echo "***** SYSTEM HEALTH CHECK *****"
 echo "Date: $(date)"
