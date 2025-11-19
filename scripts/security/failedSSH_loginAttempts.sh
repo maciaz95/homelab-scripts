@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Failed Login Monitor Script
-# Author: m4ci4z
+# Author: admin
 # Monitors SSH authentication failures and reports suspicious activity
 # Date: $(date +%Y-%m-%d)
 
@@ -18,7 +18,7 @@ echo "" >> $REPORT_FILE
 
 # Get today's failed SSH attempts
 echo "*** TODAY'S FAILED SSH ATTEMPTS ***" >> $REPORT_FILE
-TODAY=$(date +%b\ %d)
+TODAY=$(date +%Y-%m-%d)
 grep -a "$TODAY" $LOG_FILE | grep -a "Failed password" | wc -l >> $REPORT_FILE
 echo "" >> $REPORT_FILE
 
