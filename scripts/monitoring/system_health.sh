@@ -6,10 +6,11 @@
 # This script checks for current uptime of the server, disk usage, memory usage,
 # top 5 processes sorted by CPU, network connections and system load
 
-echo "***** SYSTEM HEALTH CHECK *****"
-echo "Date: $(date)"
-echo "Hostname: $(hostname)"
-echo " "
+echo "*** SYSTEM HEALTH CHECK ***"
+echo ""
+echo ">>> Date: $(date)"
+echo ">>> Hostname: $(hostname)"
+echo ""
 
 echo "*** UPTIME ***"
 uptime
