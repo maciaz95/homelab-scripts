@@ -90,7 +90,7 @@ Checks for active devices in the network
 
 - Checks current date
 - Gets current machine's IP and subnet
-- Performs nmap scan for the current subnet
+- Checks if nmap is installed and if it is, it performs nmap scan for the current subnet
 - Performs ARP Table scan for active devices in the local network (excludes incomplete entries)
 
 
