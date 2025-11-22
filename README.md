@@ -38,6 +38,7 @@ Basic script that diplays info about:
 - Network connections (ss -tuln | (optionally) head -10))
 - System load (cat /proc/loadavg)
 
+
 **Usage:**
 ```bash
 cd scripts/monitoring
@@ -75,11 +76,26 @@ Checks for failed login attempts via SSH
 - Displays raport (works)
 
 
-
 **Usage:**
 ```bash
 cd scripts/security
 ./failedSSH_loginAttempts.sh
 ```
 
+## Networking scripts
 
+### network_scanner.sh
+
+Checks for active devices in the network
+
+- Checks current date
+- Gets current machine's IP and subnet
+- Performs nmap scan for the current subnet
+- Performs ARP Table scan for active devices in the local network (excludes incomplete entries)
+
+
+**Usage:**
+```bash
+cd scripts/networking
+./network_scanner.sh
+```
